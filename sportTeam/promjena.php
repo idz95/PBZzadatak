@@ -47,7 +47,7 @@ if(!isset($_GET["sifra"])){
       	<div class="grid-x grid-padding-x">
 			<div class="large-4 large-offset-4 cell centered">
 				<form class="log-in-form" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
-				  <h4 class="text-center">Unesite novog igrača</h4>
+				  <h4 class="text-center">Promjena detalja igrača</h4>
 				  
 				  <?php if(!isset($greska["ime"])): ?>
 				  <label>Ime
@@ -139,7 +139,7 @@ if(!isset($_GET["sifra"])){
 				  <?php endif; ?>
 				  
 				  
-				  
+				  <input type="hidden" name="sifra" value="<?php echo $_POST["sifra"]; ?>"></input>
 				  <p><input type="submit" class="button expanded" value="Promijeni igrača"></input></p>
 				</form>
 				
